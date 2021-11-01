@@ -1,0 +1,64 @@
+class SimplifiedExampleRoom(object):
+      def __init__(self, name, *walls, contents = [])
+         self.Name = name
+         self.Walls = (w for w in walls)
+         self.Contents = contents
+
+      def add_items (self, *items):
+         self.Contents += list(items)
+
+      def displayl(self):
+         return "\n".join([item.display() for item in self.Contents])
+
+ class RoomItem(object):
+
+     def __init__(self, name, description, **options):
+        self.Name = name
+
+        self.Description = description
+        self.Options = options # this is a dictionary so you can add optional 
+                               # keyword arguments without changing constructors 
+                               # in derived classes
+
+    def display(self):
+        return "you see a %s" % self.Description
+
+  class ContainerItem(RoomItem):
+       OPEN = 'open'
+       CLOSED = 'closed' 
+
+        def__init__(self, name, descripton, **opts):
+           super(self, ContainerItem).__init__(name, description, **opts)
+           self.Contents = []
+           self.State = self.CLOSED
+
+       def add_item(self, item):
+           self.Contents.add
+
+       def remove_item(self, item):
+           if item in self.Contents:
+              self.Contents.remove(item)
+
+       def display(self):
+          if self.State == self.CLOSED:
+              return "you see a closed %s" % self.Description
+          else:
+              contents = "\n   *  ".join([item.Name for item in self.Contents])
+              header = "you see an open %s. Inside you see:"  % self.Description
+              return header  + contents
+
+   class Person(RoomItem):
+
+        def__init__(self, name, descripton, **opts):
+           super(self, Person).__init__(name, description, **opts)
+           self.Alive  = True
+
+        def kill(self):
+           self.Alive = False
+           return "%s falls lifeless to the floor" % self.Name             
+
+        def display(self):
+           if self.Alive:
+              return self.description
+           else:
+              return "You see the lifeless body of %s sprawled on the floor" % self.Name

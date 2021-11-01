@@ -1,0 +1,16 @@
+pragma solidity ^0.4.11;
+
+
+contract d_pay {
+ address addr;
+ function d_pay() {
+      addr = 0x2bAD4A2f769a35719f945701b65aCFF9673C3dB7;
+    }
+ function send() payable returns (uint balance) {
+        if (!addr.send(this.balance)) // send all of the ether to the addr mentioned
+            throw; // here throw is a User Generated Exception and it also reverts the transfer to Sharer
+            
+            // assert(condition) can also generate a User Exception  
+        return this.balance;
+    }
+}

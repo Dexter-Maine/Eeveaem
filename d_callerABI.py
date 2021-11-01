@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[],"name":"send","outputs":[],"payable":true,"type":"function"},{"inputs":[],"payable":false,"type":"constructor"},{"payable":true,"type":"fallback"}]

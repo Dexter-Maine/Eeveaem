@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[],"name":"send","outputs":[{"name":"balance","type":"uint256"}],"payable":true,"stateMutability":"payable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]

@@ -1,0 +1,19 @@
+User Object Includes:
+ Body Parts:
+  
+
+
+ Body Object
+ 
+ Human Object
+  -CheckHealth Function
+
+ Skills:
+
+
+ Wallets:
+  -Ethereum
+  -Bitcoin
+  -Krypits
+  -Ethereal Tokens
+  

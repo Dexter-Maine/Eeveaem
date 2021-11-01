@@ -1,0 +1,16 @@
+pragma solidity ^0.4.11;
+
+contract d_call {
+  address addr;
+
+  function d_call() {
+    addr = 0x394c04c8cc41901a0bba2e32bbccce4f1baf7e8b; // 0x_8:8
+  }
+  function send() payable returns (uint balance) {
+        if (!addr.send(this.balance)) // send all of the ether to the addr mentioned
+            throw; // here throw is a User Generated Exception and it also reverts
+  }
+  function () payable {
+    this.delegatecall(bytes4(sha3("send()"))); // D's storage is set, E is not modified 
+  }
+}
