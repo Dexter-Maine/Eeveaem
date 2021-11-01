@@ -1,0 +1,29 @@
+# C0re Syntax Privlidges And Descriptions
+# Users: '0': Admin, '1': Premium, '2': User, '3': Guest
+# A:
+
+Address:
+ - Rooms: Global
+ - Users: Global
+ - Description: Provides Address For Stated Platfrom
+
+Abort:
+ - Rooms: Global
+ - Users: Global
+ - Description: Aborts User From Socket
+
+# B:
+
+Balance:
+ - Rooms: Global
+ - Users: Global
+ - Description: Grabs Users Balance Of Stated Platform
+
+# S:
+
+Say:
+ - Rooms: Global
+ - Users: Global
+ - Description: Sends Message From User => Current Room
+
+

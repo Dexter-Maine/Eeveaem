@@ -1,0 +1,29 @@
+import pickle
+Guest = dict()
+Guest['name'] = ''
+Guest['public name'] = ''
+Guest['speech'] = 'say'
+Guest['special speech'] = False
+Guest['move'] = 'walk'
+Guest['room'] = '[Skryptic Tavern, Room One]'
+Guest['room id'] = '0'
+Guest['rooms discovered'] = list()
+Guest['inventory'] = list()
+Guest['xp'] = '0'
+Guest['level'] = '0'
+Guest['right hand'] = list()
+Guest['left hand'] = list()
+Guest['standing'] = True
+Guest['kneeling'] = False
+Guest['sitting'] = False
+Guest['laying down'] = False
+Guest['dead'] = False
+Guest['signed in'] = False
+Guest['wallet set'] = False
+Guest['started'] = False
+Guest['balance information'] = dict()
+Guest['balance information']['decimals'] = 1e18
+Guest['balance information']['crypits'] = 0
+Guest['balance information']['ethereal tokens'] = 0
+Guest['balance information']['koinium'] = 0
+pickle.dump(Guest,open('GuestProfile.epd','wb'))

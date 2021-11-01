@@ -1,0 +1,43 @@
+### Stick Class Selection Below ###
+
+class WoodenStick(UserWeapon):
+    def __init__(self):
+        super().__init__(Name="Wooden Stick",Weight=2,MaterialType=0,WeaponType=0,Level=0,MinAtk=0,MaxAtk=5, SocketCount=4, SocketList=[], BonusDefence=2,
+                         Worn=[False],
+                         BonusExp=1,MaxFireAtk=0,MinFireAtk=0,MaxElectricAtk=0,MinElectricAtk=0,MaxColdAtk=0,MinColdAtk=0,MinToxinAtk=0,MaxToxinAtk=0,ToxinType=[],Magical=None,MagicAttributes=[])
+
+class IronStick(UserWeapon):
+    def __init__(self):
+        super().__init__(Name="Iron Stick",Weight=3,MaterialType=1,WeaponType=0,Level=1,MinAtk=1,MaxAtk=6, SocketCount=4, SocketList=[], BonusDefence=4,
+                         Worn=[False],
+                         BonusExp=2,MaxFireAtk=5,MinFireAtk=0,MaxElectricAtk=5,MinElectricAtk=0,MaxColdAtk=5,MinColdAtk=0,MinToxinAtk=0,MaxToxinAtk=5,ToxinType=[],Magical=None,MagicAttributes=[])
+
+class BrassStick(UserWeapon):
+    def __init__(self):
+        super().__init__(Name="Brass Stick",Weight=4,MaterialType=2,WeaponType=0,Level=2,MinAtk=3,MaxAtk=7,SocketCount=4, SocketList=[], BonusDefence=6,
+                         Worn=[False],
+                         BonusExp=3,MaxFireAtk=8,MinFireAtk=0,MaxElectricAtk=8,MinElectricAtk=0,MaxColdAtk=8,MinColdAtk=0,MinToxinAtk=0,MaxToxinnAtk=8,ToxinType=[],Magical=None,MagicAttributes=[])
+
+class SteelStick(UserWeapon):
+    def __init__(self):
+        super().__init__(Name="Steel Stick",Weight=5,MaterialType=3,WeaponType=0,Level=5,MinAtk=5,MaxAtk=9,SocketCount=4, SocketList=[], BonusDefence=8,
+                         Worn=[True],
+                         BonusExp=5,MaxFireAtk=10,MinFireAtk=0,MaxElectricAtk=10,MinElectricAtk=0,MaxColdAtk=10,MinColdAtk=0,MinToxinAtk=0,MaxToxinAtk=10,ToxinType=[],Magical=None,MagicAttributes=[])
+
+class TitaniumStick(UserWeapon):
+    def __init__(self):
+        super().__init__(Name="Titanium Stick",Weight=4,MaterialType=4,WeaponType=0,Level=10,MinAtk=15,MaxAtk=19,SocketCount=4, SocketList=[], BonusDefence=18,
+                         Worn=[False],
+                         BonusExp=15,MaxFireAtk=12,MinFireAtk=0,MaxElectricAtk=12,MinElectricAtk=0,MaxColdAtk=12,MinColdAtk=0,MinToxinAtk=0,MaxToxinAtk=12,ToxinType=[],Magical=None,MagicAttributes=[])
+
+class KoiniumStick(UserWeapon):
+    def __init__(self):
+        super().__init__(Name="Koinium Stick",Weight=6,MaterialType=5,WeaponType=0,Level=15,MinAtk=25,MaxAtk=29,SocketCount=4, SocketList=[], BonusDefence=18,
+                         Worn=[False],
+                         BonusExp=25,MaxFireAtk=15,MinFireAtk=0,MaxElectricAtk=15,MinElectricAtk=0,MaxColdAtk=15,MinColdAtk=0,MinToxinAtk=0,MaxToxinAtk=15,ToxinType=[],Magical=None,MagicAttributes=[])
+
+class NanoTechStick(UserWeapon):
+    def __init__(self):
+        super().__init__(Name="NanoTech Stick",Weight=2,MaterialType=6,WeaponType=0,Level=25,MinAtk=45,MaxAtk=49,SocketCount=4, SocketList=[], BonusDefence=38,
+                         Worn=[False],
+                         BonusExp=35,MaxFireAtk=15,MinFireAtk=1,MaxElectricAtk=15,MinElectricAtk=5,MaxColdAtk=15,MinColdAtk=5,MinToxinAtk=2,MaxToxinAtk=15,ToxinType=[],Magical=None,MagicAttributes=[])
